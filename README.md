@@ -16,6 +16,6 @@ It is just a quick-and-dirty script i wrote in one evening. I am sorry for the m
 
 
 # Dependencies:
-`pip install pydub`
-`pip install music-tag`
-`pip install audioop-lts` (only necessary if using python 3.13 or above)
+- `pip install pydub`
+- `pip install music-tag`
+- `pip install audioop-lts` (only necessary if using python 3.13 or above)
