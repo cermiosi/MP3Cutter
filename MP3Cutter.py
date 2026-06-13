@@ -4,12 +4,11 @@ import os
 
 
 class TimeStampList:
-    mp3File = ""
-    songtitles = []  #a list where each entry is the title of one song in the file
-    timestamps = []  #a list where each entry is the timestamp in seconds where the song of the same index begins
 
     def __init__(self, file):
         self.mp3File = file
+        self.songtitles = [] #a list where each entry is the title of one song in the file
+        self.timestamps = [] #a list where each entry is the timestamp in seconds where the song of the same index begins
 
     def addTimeStamp(self, title, seconds):  #receives a title (string) and a timestamp (int) measured in seconds
         self.songtitles.append(title)
@@ -54,7 +53,8 @@ def readSonglist(filename="songlist.txt"):
     albumList = []
 
     log("starting songlist evaluation")
-    for line in lines:
+    for i in range(0, len(lines)):
+        line = lines[i]
 
         if(line == "\n"):  #skip empty lines
             continue
@@ -96,6 +96,7 @@ def readSonglist(filename="songlist.txt"):
 
             #add timestamps to list
             albumList[-1].addTimeStamp(title, int(minute) * 60 + int(second))
+            continue
 
     log("songlist evaluation finished")
     return albumList
@@ -178,5 +179,6 @@ def cutMP3(timeStampList):
 if __name__ == '__main__':
     albumList = readSonglist()
     for timeStampList in albumList:
+        #timeStampList.printTimeStampList()
         cutMP3(timeStampList)
-        #printTimeStampList()
+
