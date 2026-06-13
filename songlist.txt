@@ -1,5 +1,5 @@
 # always list the mp3 file with "FILE:filename.mp3" (must contain the .mp3 at the end!), followed by one timestamp per line
-# Timestamps must have the format "minute:second Songtitle"
+# Timestamps must have the format "minute:second Songtitle" and must be in ascending order!
 # Example on how the songlist could look below:
 
 FILE:Reroute To Remain.mp3
