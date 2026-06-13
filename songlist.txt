@@ -1,0 +1,34 @@
+# always list the mp3 file with "FILE:filename.mp3" (must contain the .mp3 at the end!), followed by one timestamp per line
+# Timestamps must have the format "minute:second Songtitle"
+# Example on how the songlist could look below:
+
+FILE:Reroute To Remain.mp3
+0:00 Reroute to Remain
+3:53 System
+7:32 Drifter
+10:44 Trigger
+15:43 Cloud Connected
+19:23 Transparent
+23:26 Dawn Of A New Day
+27:07 Egonomic
+29:43 Minus
+33:28 Dismiss The Cynic
+37:07 Free Fall
+41:04 Dark Signs
+44:23 Metaphor
+48:06 Black & White
+
+FILE:Sounds of a Playground Fading.mp3
+0:00 Sounds Of A Playground Fading
+4:42 Deliver Us
+8:12 All For Me
+12:43 The Puzzle
+17:17 Fear Is The Weakness
+21:20 Where The Dead Ships Dwell
+25:46 The Attic
+29:03 Darker Times
+32:28 Ropes
+36:09 Enter Tragedy
+40:08 Jester’s Door
+42:43 A New Dawn
+48:36 Liberation
